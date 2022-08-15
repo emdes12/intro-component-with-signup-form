@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Poppins;
+}
+
+body {
+  background-image: url(/images/bg-intro-mobile.png);
+  background-color: var(--Red);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 160px;
+}
+
+main {
+  max-width: 550px;
+  margin-right: 70px;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 2.6rem;
+  margin-bottom: 33px;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.section {
+  max-width: 539px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cap {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: var(--Blue);
+  box-shadow: 0px 10px 0px hsl(0, 54%, 63%);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Red);
+  font-weight: 700;
+  font-size: inherit;
+}
+
+form p {
+  color: var(--Grayish-Blue);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+label img {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 21px;
+  width: 100%;
+  padding: 24px 33px;
+  border: 1px solid var(--Grayish-Blue);
+  border-radius: 10px;
+}
+
+label.error img,
+label.error p {
+  display: block;
+}
+
+#submit-btn {
+  background-color: var(--Green);
+  border: none;
+  margin-bottom: 21px;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 10px 0 hsl(154, 57%, 44%);
+}
+
+input:focus {
+  border: 10px solid --Dark-Blue;
+}
+
+#submit-btn:hover {
+  opacity: 0.9;
+}
+
+#submit-btn:active {
+  transform: scaleY(0.9);
+}
+
+label p {
+  color: var(--Red);
+  width: 100%;
+  text-align: right;
+  display: none;
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 21px;
+}
+
+label {
+  position: relative;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 900px) {
+  body {
+    background-image: url(/images/bg-intro-mobile.png);
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  main {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  input {
+    height: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 24px;
+  }
+}
