@@ -18,8 +18,8 @@
 }
 
 body {
-  background-image: url(/images/bg-intro-mobile.png);
   background-color: var(--Red);
+  background-image: url("./images/bg-intro-desktop.png");
   color: #fff;
   display: flex;
   align-items: center;
@@ -159,7 +159,7 @@ label {
 
 @media (max-width: 900px) {
   body {
-    background-image: url(/images/bg-intro-mobile.png);
+    background-image: url("./images/bg-intro-mobile.png");
     flex-direction: column;
     padding: 50px;
   }
